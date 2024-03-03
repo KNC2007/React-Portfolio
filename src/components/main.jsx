@@ -1,13 +1,13 @@
 import React from 'react'
 import { TypeAnimation } from 'react-type-animation'
+import 'animate.css'
 
 const main = () => {
     return (
-        <div id='main'>
+        <div id='main' className='aboutMe'>
             <style>{'body { background-color: #c8d9ee; }'}</style>
-            <div className='w-full h-screen absolute top-0 left-0'>
-                <img className=' object-right flex' src="../src/assets/CKT avatar website.png" alt="woman avatar weating sunglasses" />
-                <div className='max-w-[700px] m-auto h-full w-full flex flex-col justify-center lg:items-start items-center'>
+            <div>
+                <div className='text max-w-[700px] m-auto h-full w-full flex flex-col justify-center lg:items-start text-left'>
                     <h1 className='sm:text-5xl text-4xl font-bold text-gray-800'>Courtney Kalbach Toland</h1>
                     <h2 className='flex sm:text-3xl text-2xl pt-4 text-gray-800'>
 
@@ -35,6 +35,9 @@ const main = () => {
                             Innovative Educator with a strong background in designing and delivering technology-integrated professional development sessions for teachers and adult learners. Proven ability to inspire educators to adopt technology, improving engagement and learning outcomes. Recently earned a Certificate in Full Stack Web Development from the University of Pennsylvania Coding Bootcamp, underscoring a commitment to mastering both front-end and back-end technologies. This achievement equips me to design comprehensive web solutions tailored to educational needs, facilitating interactive learning experiences.
                         </h3>
                     </div>
+                </div>
+                 <div className='avatarPic'>
+                    <img id='avatar' className='flex animate__animated animate__jackInTheBox' src="../src/assets/CKT avatar website.png" alt="woman avatar weating sunglasses" />
                 </div>
             </div>
         </div>
