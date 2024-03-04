@@ -1,8 +1,9 @@
 import React from 'react'
 import { TypeAnimation } from 'react-type-animation'
 import 'animate.css'
+import avatarImage from '../assets/CKT avatar website.png'
 
-const main = () => {
+const Main = () => {
     return (
         <div id='main' className='aboutMe-container flex flex-wrap items-top justify-center'>
             <style>{'body { background-color: #c8d9ee; }'}</style>
@@ -38,10 +39,10 @@ const main = () => {
                 </div>
             </div>
             <div className='avatarPic flex-shrink md:w-1/2 lg:w-1/3'>
-                <img id='avatar' className='animate__animated animate__jackInTheBox' src="../src/assets/CKT avatar website.png" alt="woman avatar weating sunglasses" />
+                <img id='avatar' className='animate__animated animate__jackInTheBox' src={avatarImage} alt="woman avatar weating sunglasses" />
             </div>
         </div>
     )
 }
 
-export default main
+export default Main
