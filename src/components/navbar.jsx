@@ -1,13 +1,13 @@
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-  { name: 'About Me', href: '#', current: true },
-  { name: 'Portfolio', href: '#', current: false },
-  { name: 'Contact', href: '#', current: false },
-  { name: 'Resume', href: '#', current: false },
+  { name: 'About Me', href: '/', current: true },
+  { name: 'Portfolio', href: '/Portfolio', current: false },
+  { name: 'Contact', href: '/Contact', current: false },
+  { name: 'Resume', href: '/Resume', current: false },
 ]
 
 function classNames(...classes) {
@@ -67,7 +67,7 @@ export default function Example() {
               {navigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}
-                  as="a"
+                  as= { <Link /> } 
                   href={item.href}
                   className={classNames(
                     item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
