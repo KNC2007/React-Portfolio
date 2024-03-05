@@ -24,7 +24,7 @@ const education = [
     details: 'Developed responsive websites and applications using HTML, CSS, JavaScript, and modern frameworks, along with server-side programming and database management, in preparation to build and deploy comprehensive web solutions from concept to completion.'
   },
   {
-    year: 2001,
+    year: 2021,
     title: 'Graduate Certificate in Digital Education',
     details: 'Constructed digital lessons and online learning experiences for teachers and students.'
   },
@@ -43,20 +43,35 @@ const education = [
 
 const Resume = () => {
   return (
-    <div id='resume' className='max-w-[1040px] m-auto md:pl-20 p-4 py-16'>
-      <h1 className='text-4xl font-bold text-center text-[#001b5e]'>
-        Resume
-      </h1>
-      {history.map((item, idx) => (
-        <Timeline 
-        key={idx} 
-        year={item.year}
-        title={item.title}
-        duration={item.duration}
-        details={item.details}
-        />
-      ))}
-    </div>
+    <main>
+      <style>{'body { background-color: #c8d9ee; }'}</style>
+      <div id='resume' className='max-w-[1040px] m-auto md:pl-20 p-10 py-16'>
+        <h1 className='text-4xl font-bold text-center text-[#001b5e]'>
+          Resume
+        </h1>
+        <h2 className='p-2 text-2xl font-bold text-center text-[#001b5e]'>Work History</h2>
+        {history.map((item, idx) => (
+          <Timeline
+            key={idx}
+            year={item.year}
+            title={item.title}
+            duration={item.duration}
+            details={item.details}
+          />
+        ))}
+      </div>
+      <div id='education' className='max-w-[1040px] m-auto md:pl-20 p-10 py-16'>
+        <h2 className='p-2 text-2xl font-bold text-center text-[#001b5e]'>Education</h2>
+        {education.map((item, idx) => (
+          <Timeline
+            key={idx}
+            year={item.year}
+            title={item.title}
+            details={item.details}
+          />
+        ))}
+      </div>
+    </main>
   )
 }
 
