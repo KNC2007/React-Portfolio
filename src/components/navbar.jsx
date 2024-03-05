@@ -1,10 +1,10 @@
 import { Link, useLocation } from 'react-router-dom'
-import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import logoGlasses from '../assets/CKT logo sunglasses website.png'
 
 const navigation = [
-  { name: 'About Me', href: '/', current: true },
+  { name: 'About Me', href: '/', current: false },
   { name: 'Portfolio', href: '/Portfolio', current: false },
   { name: 'Contact', href: '/Contact', current: false },
   { name: 'Resume', href: '/Resume', current: false },
@@ -14,7 +14,15 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
+
+
+export default function Navbar() {
+  const location = useLocation();
+
+  navigation.forEach((item) => {
+    item.current = item.href === location.pathname;
+  });
+
   return (
     <Disclosure as="nav" className="bg-gray-800 w-full absolute top-0 left-0">
       {({ open }) => (
@@ -37,8 +45,8 @@ export default function Example() {
                 <div className="flex flex-shrink-0 items-center">
                   <img
                     className="h-8 w-auto"
-                    src="../src/assets/CKT logo sunglasses website.png"
-                    alt="CKT Portfolio"
+                    src={logoGlasses}
+                    alt="CKT Portfolio logo"
                   />
                 </div>
                 <div className="hidden sm:ml-6 sm:block">

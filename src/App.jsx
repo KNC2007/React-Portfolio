@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import './App.css'
 import Navbar from './components/navbar'
-// import Footer from './components/footer'
 import { Outlet } from 'react-router-dom'
+import Footer from './components/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -10,13 +10,9 @@ function App() {
   return (
     <>
       
-<Navbar/>
-<main className="mx-3">
-  <Outlet/>
-</main>
-
-{/* <Footer/> */}
-
+<Navbar />
+<Outlet />
+<Footer />
 
 
     </>

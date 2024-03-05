@@ -46,10 +46,10 @@ const Resume = () => {
     <main>
       <style>{'body { background-color: #c8d9ee; }'}</style>
       <div id='resume' className='max-w-[1040px] m-auto md:pl-20 p-10 py-16'>
-        <h1 className='text-4xl font-bold text-center text-[#001b5e]'>
+        <h1 className='pt-1 text-4xl font-bold text-center text-[#001b5e]'>
           Resume
         </h1>
-        <h2 className='p-2 text-2xl font-bold text-center text-[#001b5e]'>Work History</h2>
+        <h2 className='p-6 text-2xl font-bold text-center text-[#001b5e]'>Work History</h2>
         {history.map((item, idx) => (
           <Timeline
             key={idx}
@@ -61,7 +61,7 @@ const Resume = () => {
         ))}
       </div>
       <div id='education' className='max-w-[1040px] m-auto md:pl-20 p-10 py-16'>
-        <h2 className='p-2 text-2xl font-bold text-center text-[#001b5e]'>Education</h2>
+        <h2 className='pb-6 text-2xl font-bold text-center text-[#001b5e]'>Education</h2>
         {education.map((item, idx) => (
           <Timeline
             key={idx}
