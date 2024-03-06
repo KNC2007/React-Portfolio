@@ -1,8 +1,41 @@
-# React + Vite
+# react portfolio [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
+Portfolio created using React of projects, resume, and contact information. 
 
-Currently, two official plugins are available:
+## Table of Contents
+1. [Installation](#installation)
+2. [Usage](#usage-information)
+3. [License](#license)
+4. [Contributing](#contributing)
+5. [Tests](#test-instructions)
+6. [Questions](#questions)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation
+Fork this repo and clone it to your machine. Then type npm i in the terminal to install the dependencies listed in the package.json. 
+
+## Usage Information
+Enter the command `npm run dev` to invoke the application. Click the links in the navbar to navigate to each page. The contact form uses getForm.io so the creator can receive emails once someone fills out the form.
+    
+![Portfolio About Me Homepage.](./src/assets/React%20Portfolio%20About%20Me%20CK%20Screenshot.png)
+
+## License
+This project is licensed under the MIT License license.
+* For more information about this license, click here: https://choosealicense.com/licenses/mit/.
+
+## Contributing 
+Resources used:
+* https://getform.io/
+* https://www.canva.com/
+* https://www.npmjs.com/package/react-icons
+* https://tailwindui.com/components
+* https://animate.style/
+* Portfolio was inspired by the following YouTube video by Code Commerce: https://youtu.be/22CxRxryQFE?si=_YQhkYd964vB46n2
+
+## Test Instructions
+N/A
+
+## Questions
+* GitHub Username: KNC2007
+* Click here to access my GitHub Profile: https://github.com/knc2007
+* To reach me for additional questions, please email me at: [cnkalbach@gmail.com](mailto:cnkalbach@gmail.com)
