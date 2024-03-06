@@ -4,10 +4,10 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './index.css'
-import Homepage from './pages/Homepage.jsx'
-import Resume from './pages/Resume.jsx'
-import Portfolio from './pages/Portfolio.jsx'
-import Contact from './pages/Contact.jsx'
+import Homepage from './pages/Homepage'
+import Resume from './pages/Resume'
+import Portfolio from './pages/Portfolio'
+import Contact from './pages/Contact'
 
 
 
