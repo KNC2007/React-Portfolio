@@ -2,7 +2,7 @@ import React from 'react'
 
 const ContactComp = () => {
     return (
-        <div id='Contact' className='max-w-[1040px] m-auto md:pl-20 p-4 py-16'>
+        <div id='Contact' className='max-w-[1040px] m-auto md:pl-20 p-5 py-16'>
             <style>{'body { background-color: #c8d9ee; }'}</style>
             <h1 className='pt-10 text-4xl font-bold text-center text-[#001b5e]'>Contact</h1>
             <form action="https://getform.io/f/lajnzgva" method='POST' encType='multipart/form-data'>

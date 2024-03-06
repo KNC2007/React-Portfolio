@@ -12,7 +12,7 @@ const ProjectItem = ({ img, title }) => {
 
                 </p>
                 <div className='pb-2'>
-                    <a href="/">
+                    <a href='/'>
                         <p className='text-center p-3 rounded-lg bg-white text-gray-700 font-bold cursor-pointer text-lg'>GitHub</p>
                     </a>
                 </div>

@@ -1,5 +1,7 @@
 import React from 'react'
 import Timeline from './Timeline';
+import ResumeCK from '../assets/Teacher Resume cnk - web.pdf'
+import { FaReact, FaJs, FaHtml5, FaCss3, FaGithub, FaNodeJs, FaBootstrap, FaFigma } from 'react-icons/fa';
 
 
 const history = [
@@ -40,6 +42,41 @@ const education = [
   },
 ];
 
+const proficiencies =[
+  {
+    icon: <FaReact className='hover:text-white' size={40}/>,
+    title: 'React',
+  },
+  {
+    icon: <FaJs className='hover:text-white' size={40}/>,
+    title: 'Javascript',
+  },
+  {
+    icon: <FaHtml5 className='hover:text-white' size={40}/>,
+    title: 'HTML5',
+  },
+  {
+    icon: <FaCss3 className='hover:text-white' size={40}/>,
+    title: 'CSS3',
+  },
+  {
+    icon: <FaGithub className='hover:text-white' size={40}/>,
+    title: 'Github',
+  },
+  {
+    icon: <FaNodeJs className='hover:text-white' size={40}/>,
+    title: 'NodeJs',
+  },
+  {
+    icon: <FaBootstrap className='hover:text-white' size={40}/>,
+    title: 'Bootstrap',
+  },
+  {
+    icon: <FaFigma className='hover:text-white' size={40}/>,
+    title: 'Figma',
+  },
+]
+
 
 const Resume = () => {
   return (
@@ -70,6 +107,26 @@ const Resume = () => {
             details={item.details}
           />
         ))}
+      </div>
+      <div id='education' className='max-w-[1040px] m-auto md:pl-20 p-10 py-16'>
+        <h2 className='pb-6 text-2xl font-bold text-center text-[#001b5e]'>Proficiencies</h2>
+        {proficiencies.map((item, idx) => (
+          <Timeline 
+            key={idx}
+            year={item.icon}
+            title={item.title}
+          />
+        ))}
+      </div>
+      <div>
+      <a className='flex justify-content-center items-center pb-20'
+        href={ResumeCK}
+        download="ResumeCK"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <button className='bg-stone-600 hover:bg-blue-800 text-white font-bold py-2 px-4 border border-blue-800 rounded text-center'>Click here to download my full resume</button>
+      </a>
       </div>
     </main>
   )
