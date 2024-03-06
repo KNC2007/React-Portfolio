@@ -3,7 +3,7 @@ import { TypeAnimation } from 'react-type-animation'
 import 'animate.css'
 import avatarImage from '../assets/CKT avatar website.png'
 
-const Main = () => {
+const main = () => {
     return (
         <div id='main' className='aboutMe-container flex flex-wrap justify-center pt-10'>
             <style>{'body { background-color: #c8d9ee; }'}</style>
@@ -45,4 +45,4 @@ const Main = () => {
     )
 }
 
-export default Main
+export default main
