@@ -5,7 +5,7 @@ import avatarImage from '../assets/CKT avatar website.png'
 
 const Main = () => {
     return (
-        <div id='main' className='aboutMe-container flex flex-wrap items-top justify-center pb-10 pt-10'>
+        <div id='main' className='aboutMe-container flex flex-wrap justify-center pt-10'>
             <style>{'body { background-color: #c8d9ee; }'}</style>
             <div className='text-wrapper md:w-1/2 lg:w-1/2 justify-center'>
                 <div className='max-w-[700px] m-auto h-full w-full'>

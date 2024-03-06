@@ -2,14 +2,17 @@
   margin: 0
 }
 
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
 }
+
 
 .aboutMe-container {
   margin-top: 50px;
+  margin-bottom: 20px;
 }
 
 .text-wrapper { 
@@ -33,3 +36,6 @@
   z-index: 1000;
 }
 
+Footer {
+  margin-top: auto;
+}
