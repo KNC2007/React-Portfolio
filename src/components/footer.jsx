@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaLinkedin, FaGithub, FaChalkboardTeacher } from 'react-icons/fa';
 
-const Footer = () => {
+const footer = () => {
   return (
     <footer className='bg-gray-800 text-gray-400 sm:px-6 md:px-8 flex items-center justify-center w-screen h-14'>
       <div>
@@ -21,4 +21,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default footer;
