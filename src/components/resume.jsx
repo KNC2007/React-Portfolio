@@ -78,7 +78,7 @@ const proficiencies =[
 ]
 
 
-const Resume = () => {
+const resume = () => {
   return (
     <main>
       <style>{'body { background-color: #c8d9ee; }'}</style>
@@ -132,4 +132,4 @@ const Resume = () => {
   )
 }
 
-export default Resume
+export default resume
