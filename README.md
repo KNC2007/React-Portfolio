@@ -19,7 +19,7 @@ Enter the command `npm run dev` to invoke the application. Click the links in th
     
 ![Portfolio About Me Homepage.](./src/assets/React%20Portfolio%20About%20Me%20CK%20Screenshot.png)
 
-Deployed application: 
+Deployed application: https://cktportfolio.netlify.app 
 
 ## License
 This project is licensed under the MIT License license.
